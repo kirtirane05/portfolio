@@ -1,0 +1,339 @@
+:root {
+    --primary-color: rgb(26, 42, 79);
+    --secondary-color: rgb(247, 165, 165);
+    --accent-color: rgb(255, 219, 182);
+    --background-color: rgb(255, 242, 239);
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(255, 242, 239, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 80px;
+    background: linear-gradient(
+        135deg,
+        var(--background-color) 0%,
+        rgba(247, 165, 165, 0.1) 100%
+    );
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.display-4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.lead {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+/* Animations */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+/* Skills Section */
+.card {
+    transition: transform 0.3s ease;
+    background-color: var(--background-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.progress {
+    height: 8px;
+    background-color: rgba(247, 165, 165, 0.2);
+}
+
+.progress-bar {
+    background-color: var(--secondary-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.list-unstyled li {
+    color: var(--primary-color);
+}
+
+.bi-check-circle-fill {
+    color: var(--secondary-color) !important;
+}
+
+.bi-star-fill {
+    color: var(--accent-color) !important;
+}
+
+/* About Section */
+#about {
+    background-color: var(--background-color);
+}
+
+/* Projects Section */
+#projects {
+    background-color: var(--background-color);
+}
+
+/* Education Section */
+#education {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 242, 239, 0.9) 0%,
+        rgba(247, 165, 165, 0.1) 100%
+    );
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--secondary-color);
+}
+
+.timeline-item h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.certification-item h5 {
+    color: var(--primary-color);
+}
+
+.bi-award {
+    color: var(--secondary-color);
+}
+
+/* Goals Section */
+#goals {
+    background-color: var(--background-color);
+}
+
+#goals .bi-arrow-right-circle-fill {
+    color: var(--secondary-color);
+}
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 242, 239, 0.9) 0%,
+        rgba(255, 219, 182, 0.1) 100%
+    );
+}
+
+.contact-item {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item i {
+    color: var(--secondary-color) !important;
+}
+
+.contact-item h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 1rem;
+    margin: 2rem 0;
+}
+
+.blockquote-footer {
+    color: var(--primary-color);
+}
+
+#projects .card {
+    transition: transform 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+}
+
+#projects .badge {
+    background-color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+#projects .card-title {
+    color: var(--primary-color);
+}
+
+#projects .bi-check2-circle {
+    color: var(--secondary-color);
+}
+
+#skills {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 242, 239, 0.9) 0%,
+        rgba(255, 219, 182, 0.1) 100%
+    );
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .hero-section {
+        padding-top: 100px;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-item {
+        padding: 1.5rem;
+    }
+
+    .timeline-item {
+        padding-left: 15px;
+    }
+
+    #projects .card-body {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+    }
+
+    .progress {
+        width: 80px !important;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+
+    .blockquote {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+}
+
+/* Fix for mobile navigation */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: var(--background-color);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
